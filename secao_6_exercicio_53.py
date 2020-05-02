@@ -7,6 +7,6 @@ contador = 1
 
 for k in range(1, linhas+1):
     print()
-    for i in range(1,k+1):
-        print(contador, end = ' ')
+    for i in range(1, k+1):
+        print(contador, end=' ')
         contador += 1
