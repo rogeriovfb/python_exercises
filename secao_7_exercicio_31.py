@@ -17,7 +17,7 @@ for i in range(1,11):
     if numero in conj2:
         print('Numero repetido, tente novamente')
     else:
-        conj1.add(numero)
+        conj2.add(numero)
 
 resultado = conj1.union(conj2)
 print(resultado)
