@@ -4,14 +4,16 @@ S = 2/4 + 5/5 + 10/6 + ... + (N^2+1)/(N+3)
 """
 
 
-def elemento(n):
-    return (n**2 + 1)/(n+3)
+def elemento(k):
+    return (k**2 + 1)/(k+3)
 
 
-N = int(input('Insira a quantidade de termos da série: '))
-soma = 0
+def somatorio_serie(n):
+    soma = 0
+    for i in range(1, n + 1):
+        soma = soma + elemento(i)
+    return soma
 
-for i in range(1, N+1):
-    soma = soma + elemento(i)
 
-print(soma)
+n = int(input('Insira a quantidade de termos da série: '))
+print(somatorio_serie(n))
