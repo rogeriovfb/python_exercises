@@ -1,6 +1,6 @@
 """
 Faça uma função que receba como parametro o valor de um angulo em graus e calcule o valor do cosseno desse angulo
-usando a série de Taylos (truncar em n=5). Use pi = 3.141593
+usando a série de Taylor (truncar em n=5). Use pi = 3.141593
 """
 
 pi = 3.141593
@@ -20,7 +20,7 @@ def elemento(x, n):
 
 
 def degree_para_rad(deg):
-    "Recebe um angulo em graus como parametro e retorna o valor em radianos"
+    """Recebe um angulo em graus como parametro e retorna o valor em radianos"""
     return deg*pi/180
 
 
