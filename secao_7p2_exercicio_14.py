@@ -12,6 +12,7 @@ def imprime_matriz(listas):
 
 
 def lista_aleatoria(tamanho, menor_valor, maior_valor):
+    """Retorna uma lista pseudo-randômica com tamanho definido de valores inteiros, no range(menor_valor, maior_valor"""
     resultado = []
     while len(resultado) < tamanho:
         elemento = randint(menor_valor, maior_valor)
@@ -30,6 +31,3 @@ for i in range(0, len(numeros), 5):
     matriz.append(numeros[i:i + 5])
 
 imprime_matriz(matriz)
-
-
-
