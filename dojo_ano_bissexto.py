@@ -18,7 +18,7 @@ Escreva uma função que determina se um determinado ano informado é bissexto o
 """
 
 
-def eh_bissesto(ano):
+def eh_bissexto(ano):
     if (not ano % 4 and ano % 100) or not ano % 400:
         return True
     else:
@@ -26,4 +26,4 @@ def eh_bissesto(ano):
 
 
 lista_anos = [1600, 1732, 1888, 1944, 2008, 1742, 1889, 1951, 2011]
-print(list(map(eh_bissesto, lista_anos)))
+print(list(map(eh_bissexto, lista_anos)))
