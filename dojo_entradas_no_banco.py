@@ -19,7 +19,7 @@ def evento_log(porta):
 
 
 # Criando log
-log = [evento_log('NOK') if numero % randint(2,5) == 0 else evento_log('OK') for numero in range(1, 20)]
+log = [evento_log('NOK') if numero % randint(2, 5) == 0 else evento_log('OK') for numero in range(1, 20)]
 
 # Imprimindo log para verificação
 for i in range(len(log)):
@@ -32,6 +32,6 @@ for registro in log:
     if abertura == 'OK':
         hora = int(registro.split('-')[2].split()[1].split(':')[0])
         if 10 <= hora < 16:
-            pessoas +=1
+            pessoas += 1
 
 print(f'Durante o horário de funcionamento, passaram {pessoas} pessoas pela porta')
