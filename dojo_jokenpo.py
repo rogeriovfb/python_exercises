@@ -12,7 +12,7 @@ Tesoura empata com Tesoura e ganha de Papel
 Papel empata com Papel e ganha de Pedra
 """
 
-import random
+from random import choice
 from time import sleep
 
 
@@ -36,8 +36,8 @@ sleep(0.5)
 print("PO!")
 sleep(0.5)
 
-jogador1 = random.choice(('pedra', 'papel', 'tesoura'))
-jogador2 = random.choice(('pedra', 'papel', 'tesoura'))
+jogador1 = choice(('pedra', 'papel', 'tesoura'))
+jogador2 = choice(('pedra', 'papel', 'tesoura'))
 
 print(f'O Jogador 1 colocou {jogador1}')
 print(f'O Jogador 2 colocou {jogador2} \n')
