@@ -8,6 +8,10 @@ from datetime import datetime
 
 
 def diferenca_anos(data):
+    """
+    :param data: Uma lista no formato [..., dd, mm, aaaa]
+    :return: int do delta em anos entre o dia atual e a data recebida na função
+    """
     return int((datetime.now() - datetime(year=int(data[-1]), month=int(data[-2]), day=int(data[-3]))).days/365.25)
 
 
