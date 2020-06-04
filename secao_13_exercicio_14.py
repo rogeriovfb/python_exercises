@@ -25,6 +25,7 @@ for line in entrada:
     idade = diferenca_anos(line.rstrip('\n').split(' '))
     dados_saida += nome + ' ' + str(idade) + ' anos\n'
 
+# Arquivo de saída simulado em memória
 saida = StringIO(dados_saida)
 
 entrada.seek(0)
