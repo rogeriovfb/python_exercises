@@ -1,5 +1,5 @@
 # Exercícios de Python
-Todos exercícios estão com seu respectivo enunciado.
+Todos exercícios estão com seus respectivos enunciados.
 
 ## Exercícios DojoPuzzles
 Exercícios retirados do site http://dojopuzzles.com/problemas/todos/
